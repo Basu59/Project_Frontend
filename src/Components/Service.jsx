@@ -46,43 +46,5 @@ class Service {
         return axios.delete(URL_SCH + '/' + scheduleId);
     }
 
-    // for stops
-    getStop() {
-        return axios.get(URL_STOP);
-    }
-    createStop(stop) {
-        return axios.post(URL_STOP, stop);
-    }
-    getStopById(stopId) {
-        return axios.get(URL_STOP + '/' + stopId);
-    }
-
-    updateStop(stop, stopId) {
-        return axios.put(URL_STOP + '/' + stopId, stop);
-
-    }
-    deleteStop(stopId) {
-        return axios.delete(URL_STOP + '/' + stopId);
-    }
-    // BUS
-
-    getBus() {
-        return axios.get(URL_BUS);
-    }
-
-    createBus(Bus) {
-        return axios.post(URL_BUS, Bus);
-    }
-    getBusById(BusId) {
-        return axios.get(URL_BUS + '/' + BusId);
-    }
-
-    updateBus(Bus, BusId) {
-        return axios.put(URL_BUS + '/' + BusId, Bus);
-
-    }
-    deleteBus(BusId) {
-        return axios.delete(URL_BUS + '/' + BusId);
-    }
 }
 export default new Service();
