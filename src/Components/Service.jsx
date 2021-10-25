@@ -46,5 +46,27 @@ class Service {
         return axios.delete(URL_SCH + '/' + scheduleId);
     }
 
+
+    // for stops
+    getStop() {
+        return axios.get(URL_STOP);
+    }
+
+    createStop(stop) {
+        return axios.post(URL_STOP, stop);
+    }
+
+    getStopById(StopsId) {
+        return axios.get(URL_STOP + '/' + StopsId);
+    }
+
+    updateStop(stop, StopsId) {
+        return axios.put(URL_STOP + '/' + StopsId, stop);
+    }
+
+    deleteStop(StopsId) {
+        return axios.delete(URL_STOP + '/' + StopsId);
+    }
+
 }
 export default new Service();
