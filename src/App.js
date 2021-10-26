@@ -17,6 +17,12 @@ import ListStop from './Components/StopDet/ListStop';
 import AddStop from './Components/StopDet/AddStop';
 import ViewStop from './Components/StopDet/ViewStop';
 import UpdateStop from './Components/StopDet/UpdateStop';
+import AddPassenger from './Components/PassengerDet/AddPassenger';
+import UpdatePassenger from './Components/PassengerDet/UpdatePassenger';
+import AddBus from './Components/BusDet/AddBus'
+import ListBus from './Components/BusDet/ListBus'
+import UpdateBus from './Components/BusDet/UpdateBus'
+import ListPassenger from './Components/PassengerDet/ListPassenger';
 import Main from './Main';
 import Home from './Home';
 import HomeNav from './HomeNav';
@@ -41,6 +47,13 @@ function App() {
        <Route exact path='/' component={Main} />
        <Route exact path='/RouteDe' component={RouteDe} />
        <Route exact path='/ScheduleDe' component={ScheduleDe} />
+       <Route exact path='/update-passenger/:id' component={UpdatePassenger} />
+       <Route exact path='/AddPassenger' component={AddPassenger} />
+       <Route exact path='/AddBus' component={AddBus} />
+       <Route exact path='/ListBus' component={ListBus} />
+       <Route exact path='/update-bus/:id' component={UpdateBus} />
+       <Route exact path='/ListPassenger' component={ListPassenger} />
+
        
        </Switch>
        </>

@@ -4,6 +4,7 @@ const URL_SCH = "http://localhost:8080/bus/addsch";
 const URL_STOP = "http://localhost:8080/bus/addstop";
 const URL_BUS = "http://localhost:8080/bus/addbus";
 const BASE_URL="http://localhost:8080/bus/addbusd";
+const BASE_URL1="http://localhost:8080/bus/addpas";
 
 
 class Service {
@@ -89,6 +90,27 @@ class Service {
     deleteStop(StopsId) {
         return axios.delete(URL_STOP + '/' + StopsId);
     }
+
+      //passanger
+      getPassenger(){
+        return axios.get(BASE_URL1);
+    }
+createPassenger(passenger){
+        return axios.post(BASE_URL1,passenger);
+    }
+getPassengerById(passengerId){
+        return axios.get(BASE_URL1+ '/'+ passengerId);
+     }
+
+updatePassenger(passenger,passengerId){
+         return axios.put(BASE_URL1+ '/'+ passengerId,passenger); 
+
+         }
+deletePassenger(passengerId){
+             return axios.delete(BASE_URL1+'/'+passengerId);
+         }
+
+       
 
 }
 export default new Service();
