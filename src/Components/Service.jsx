@@ -3,8 +3,11 @@ const URL_ROU = "http://localhost:8080/bus/addrou";
 const URL_SCH = "http://localhost:8080/bus/addsch";
 const URL_STOP = "http://localhost:8080/bus/addstop";
 const URL_BUS = "http://localhost:8080/bus/addbus";
+const BASE_URL="http://localhost:8080/bus/addbusd";
+
 
 class Service {
+
 
 
     // for Bus
@@ -45,6 +48,25 @@ class Service {
     deleteSchedule(scheduleId) {
         return axios.delete(URL_SCH + '/' + scheduleId);
     }
+    // bus
+    getBus(){
+        return axios.get(BASE_URL);
+    }
+   
+    createBus(bus){
+        return axios.post(BASE_URL,bus);
+    }
+    getBusById(busId){
+        return axios.get(BASE_URL+ '/'+ busId);
+     }
+
+    updateBus(bus,busId){
+         return axios.put(BASE_URL+ '/'+ busId,bus); 
+
+         }
+    deleteBus(busId){
+             return axios.delete(BASE_URL+'/'+busId);
+         }
 
 }
 export default new Service();

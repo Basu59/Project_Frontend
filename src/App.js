@@ -15,6 +15,9 @@ import RouteDe from './UserComponent/RouteDe';
 import ScheduleDe from './UserComponent/ScheduleDe';
 import Main from './Main';
 import Home from './Home';
+import AddBus from './Components/BusDet/AddBus';
+import ListBus from './Components/BusDet/ListBus';
+import UpdateBus from './Components/BusDet/UpdateBus';
 function App() {
   return (
     <>
@@ -32,6 +35,9 @@ function App() {
        <Route exact path='/' component={Main} />
        <Route exact path='/RouteDe' component={RouteDe} />
        <Route exact path='/ScheduleDe' component={ScheduleDe} />
+       <Route exact path='/AddBus' component={AddBus} />
+       <Route exact path='/ListBus' component={ListBus} />
+       <Route exact path='/update-bus/:id' component={UpdateBus} />
 
        </Switch>
        </>
