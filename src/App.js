@@ -3,11 +3,9 @@ import './App.css';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import { Switch,Route, Router } from "react-router-dom";
-
 import UpdateRoute from './Components/RouteDet/UpdateRoute';
 import AddRoute from './Components/RouteDet/AddRoute';
 import ListRoute from './Components/RouteDet/ListRoute';
-
 import AddSche from './Components/ScheduleDet/AddSche';
 import ListSchedule from './Components/ScheduleDet/ListSchedule';
 import UpdateSche from './Components/ScheduleDet/UpdateSche';
