@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import Service from '../Service'
+import { MdArrowBackIosNew } from 'react-icons/md';
+
 export default class ListSchedule extends Component {
     constructor(props) {
         super(props)
@@ -32,20 +34,24 @@ export default class ListSchedule extends Component {
     render() {
         return (
             <>
+
                 <div class="bg-warning d-flex justify-content-center">
 
                     <div class="">Centurion University of Technology and Management
                     </div>
 
+
                 </div>
+                <a href="/Home" className="ms-5"><MdArrowBackIosNew />
+                </a>
                 <div className=" container shadow-lg mt-5 table-data bg-light" >
 
-                    <h2 className="text-center"> Schedule</h2>
-                    <button type="button" style={{ marginLeft: "1150px" }} className="btn btn-primary mb-3" onClick={this.addSchedule}>Add Route</button>
+                    <h2 className="text-center"> SCHEDULE</h2>
+                    <button type="button" style={{ marginLeft: "920px" }} className="btn btn-primary mb-3" onClick={this.addSchedule}>Add Schedule</button>
                     <div className="row">
 
 
-                        <table className="table table-striped  table-bordered table-hover">
+                        <table className="table table-striped border-dark  table-bordered table-hover">
 
                             <thead className="thead-dark">
                                 <tr>

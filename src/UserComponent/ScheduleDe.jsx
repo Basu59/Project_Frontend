@@ -27,7 +27,7 @@ export default class ScheduleDe extends Component {
                     <div className="row">
 
 
-                        <table className="table table-striped  table-bordered table-hover">
+                        <table className="table table-striped border-dark table-bordered table-hover">
 
                             <thead className="thead-dark">
                                 <tr>

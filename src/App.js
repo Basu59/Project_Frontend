@@ -24,12 +24,19 @@ import ListPassenger from './Components/PassengerDet/ListPassenger';
 import Main from './Main';
 import Home from './Home';
 import HomeNav from './HomeNav';
+import Sidebar from './NavComponent/Sidebar';
+
 function App() {
   return (
-    <>
-    <HomeNav/>
-{/* <Nav/> */}
-    <Switch>
+    <>   
+    <Sidebar/>
+
+   <Switch>
+
+        <Route exact path='/' component={Main} />
+
+        <Route exact path='/Home' component={Home} />
+
        <Route exact path='/update-route/:id' component={UpdateRoute} />
        <Route exact path='/AddRoute' component={AddRoute} />
        <Route exact path='/ListRoute' component={ListRoute} />
@@ -37,12 +44,10 @@ function App() {
        <Route exact path='/ListSchedule' component={ListSchedule} />
        <Route exact path='/update-schedule/:id' component={UpdateSche} />
 
-       <Route exact path='/Home' component={Home} />
        <Route exact path='/update-stop/:id' component={UpdateStop} />
        <Route exact path='/view-stop/:id' component={ViewStop} />
        <Route exact path='/ListStop' component={ListStop} />
        <Route exact path='/AddStop' component={AddStop} />
-       <Route exact path='/' component={Main} />
        <Route exact path='/RouteDe' component={RouteDe} />
        <Route exact path='/ScheduleDe' component={ScheduleDe} />
        <Route exact path='/update-passenger/:id' component={UpdatePassenger} />

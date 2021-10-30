@@ -59,7 +59,7 @@ export default class UpdateSche extends Component {
     return (
 
 
-      <div className="container bg-light">
+      <div className="container">
         <div className="row ">
           <div className="card col-md-4 offset-md-4 offset-md-4">
             <h2>Update Details</h2>

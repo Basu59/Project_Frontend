@@ -1,3 +1,15 @@
 body{
-  background-color: #eafafa !important;
+  background-color: #e3ffda !important;
+}
+.back{
+  position: relative;
+  left: 2rem;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+.mainimg{
+  position: relative;
+  top: 2rem;
+  left: 8rem;
 }

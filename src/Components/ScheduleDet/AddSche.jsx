@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Service from '../Service';
+import { Form, Row, Button } from "react-bootstrap";
 
 export default class AddSche extends Component {
     constructor(props) {
@@ -52,44 +53,69 @@ export default class AddSche extends Component {
       render() {
         return (
     
-    <>
-    <div className="container bg-light">
+          <>
     
-      <div className="row justify-content-center">
-        <div className="card ">
+          <div>
+               <div className="card col-md-6 pt-9 offset-md-3 offset-md-3  bg-light shadow-lg rounded">
+                  <h3 className="text-center text mt-2">Schedule</h3>
+                  <div className="card-body">
+                    <Form striped bordered hover variant="light">
+                      <Row className="mb-3">
+                        <Form.Group controlId="formGridZip">
+                          <Form.Label>
+                            Enter Bus Number 
+                          </Form.Label>
+                          
+                          <Form.Control
+                            value={this.state.busno}
+                            onChange={this.changeBusNoHandler}
+                          />
+                        </Form.Group>
+                        
+                        <Form.Group controlId="formGridZip">
+                          <Form.Label>
+                            Enter Arrival Time
+                          </Form.Label>
+                         
+                          <Form.Control
+                            type="time"
+                            value={this.state.aritime}
+                            onChange={this.changeAritimeHandler}
+                          />
+                        </Form.Group>
+                        <Form.Group controlId="formGridZip">
+                          <Form.Label>
+                            Departure
+                          </Form.Label>
+                         
+                          <Form.Control
+                            type="time"
+                            value={this.state.deptime}
+                            onChange={this.changeDeptimeHandler}
+                          />
+                        </Form.Group>
+                      </Row>
+                      <Button
+                        className="btn-center me-2"
+                        variant="danger"
+                        type="submit"
+                        onClick={this.saveSchedule}
+                      >
+                        Submit
+                      </Button>
+                       <Button
+                        className="btn-center"
+                        variant="primary"
+                        type="submit"
+                        onClick={this.cancel.bind(this)}
+                      > Cancel</Button>
+                    </Form>
+                  </div>
+                </div>
+              </div>
+            
         
-        <h2 >Schedule</h2>
-    <form>
-    <div className="form-group">
-      <label>Bus No</label>
-      <input placeholder="Bus No" name="busno" className="form-control mt-1 mb-2 shadow-lg p-3 mb-2 bg-body rounded"
-      value={this.state.busno} onChange={ this.changeBusNoHandler}/>
-    </div>
-    
-
-    <div className="form-group">
-      <label>Arrival time</label>
-      <input placeholder="Arrival Time" name="aritime" className="form-control mt-1 mb-2 shadow-lg p-3 mb-2 bg-body rounded"
-      value={this.state.aritime} onChange={ this.changeAritimeHandler }/>
-    </div> 
-    <div className="form-group">
-      <label>Departure time</label>
-      <input placeholder="Departure time" name="deptime" className="form-control mt-1 mb-2 shadow-lg p-3 mb-2 bg-body rounded"
-      value={this.state.deptime} onChange={ this.changeDeptimeHandler }/>
-    </div> 
-   
-    
-    <button className="btn btn-success me-3 mb-2" onClick={this.saveSchedule}>Save</button>
-    <button className="btn btn-danger ms-4 mb-2" onClick={this.cancel.bind(this)} style={{marginLeft: "10px"}}>Cancel</button>
-    </form>
-        </div>
-    
-      </div>
-    </div>
-    
-    
-  
-          </>
+                </>
         );
       }
 }
