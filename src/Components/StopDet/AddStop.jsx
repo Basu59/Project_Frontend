@@ -49,9 +49,9 @@ export default class AddStop extends Component {
         return (
     
     <>
-    <div className="container mt-5">
+    <div className="container mt-5 w-50">
     
-      <div className="row justify-content-center">
+      <div className="container row justify-content-center">
         <div className="card ">
         
         <h2 >Stop</h2>
@@ -79,6 +79,10 @@ export default class AddStop extends Component {
     
       </div>
     </div>
+
+    {/* example */}
+
+    
     
     
   

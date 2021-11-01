@@ -1,5 +1,4 @@
 import './App.css';
-
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import { Switch,Route, Router } from "react-router-dom";
@@ -23,13 +22,12 @@ import UpdateBus from './Components/BusDet/UpdateBus'
 import ListPassenger from './Components/PassengerDet/ListPassenger';
 import Main from './Main';
 import Home from './Home';
-import HomeNav from './HomeNav';
-import Sidebar from './NavComponent/Sidebar';
+
 
 function App() {
   return (
     <>   
-    <Sidebar/>
+    
 
    <Switch>
 
@@ -44,6 +42,7 @@ function App() {
        <Route exact path='/ListSchedule' component={ListSchedule} />
        <Route exact path='/update-schedule/:id' component={UpdateSche} />
 
+       
        <Route exact path='/update-stop/:id' component={UpdateStop} />
        <Route exact path='/view-stop/:id' component={ViewStop} />
        <Route exact path='/ListStop' component={ListStop} />
@@ -56,8 +55,6 @@ function App() {
        <Route exact path='/ListBus' component={ListBus} />
        <Route exact path='/update-bus/:id' component={UpdateBus} />
        <Route exact path='/ListPassenger' component={ListPassenger} />
-
-       
        </Switch>
        </>
   );
