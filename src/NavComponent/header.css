@@ -1,12 +1,15 @@
 .hmbger {
-  color: #111;
+  color: rgb(255, 255, 255);
   float: left;
 }
 
 @media screen and (max-width: 768px) {
   .hmbger {
-    color: rgb(241, 53, 53);
-    float: right;
+    color: rgb(255, 255, 255);
+    float: left;
     margin-left: 10px;
   }
+}
+.Backnav{
+  background-color: rgb(19, 40, 78);
 }

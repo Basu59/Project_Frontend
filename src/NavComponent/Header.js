@@ -31,7 +31,7 @@ export default class Example extends React.PureComponent {
     const { ontoggleNav } = this.props;
     return (
       <div>
-        <Navbar color="light" light expand="md">
+        <Navbar className="Backnav" >
           <NavbarBrand>
             <a href="/">CUTM</a>
             <span className="hmbger" onClick={ontoggleNav}>

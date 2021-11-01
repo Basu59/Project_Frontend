@@ -1,5 +1,5 @@
 body{
-  background-color: #e3ffda !important;
+  background-color: #edfce6 !important;
 }
 .back{
   position: relative;
@@ -11,5 +11,6 @@ body {
 .mainimg{
   position: relative;
   top: 2rem;
+  box-shadow: 2rem;
   left: 8rem;
 }

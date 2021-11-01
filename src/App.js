@@ -23,7 +23,6 @@ import UpdateBus from './Components/BusDet/UpdateBus'
 import ListPassenger from './Components/PassengerDet/ListPassenger';
 import Main from './Main';
 import Home from './Home';
-import HomeNav from './HomeNav';
 import Sidebar from './NavComponent/Sidebar';
 
 function App() {
