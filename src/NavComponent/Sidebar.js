@@ -5,6 +5,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Main from '../Main'
 import "./styles.css";
 import "./sidebar.css"
+import { AiFillHome } from 'react-icons/ai';
+import { BsStoplights } from 'react-icons/bs';
+import { FaBus } from 'react-icons/fa';
+import { FaRoute } from 'react-icons/fa';
+import { IoMdPeople } from 'react-icons/io';
+import { BiTimeFive} from 'react-icons/bi';
 
 
 class Sidebar extends React.Component {
@@ -20,7 +26,7 @@ class Sidebar extends React.Component {
 
   render() {
     const { open } = this.state;
-    const mobile = window.matchMedia("(max-width: 768px)").matches;
+    const mobile = window.matchMedia("(max-width: 708px)").matches;
     console.log(mobile, open);
     return (
       <div>
@@ -44,16 +50,13 @@ class Sidebar extends React.Component {
             >
               &times;
             </a>
+            <a href="/Home"><AiFillHome />  Home</a>
+            <a href="/ListStop"><BsStoplights/>  Stops</a>
+            <a href="/ListBus"><FaBus/>  Bus</a>
+            <a href="/ListPassenger"><IoMdPeople/>  Passenger</a>
+            <a href="/ListRoute"><FaRoute/>  Route</a>
+            <a href="/ListSchedule"><BiTimeFive/>  Schedule</a>
 
-            <a href="#">
-              <i class="fa fa-fw fa-home" />
-              About
-            </a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
-            <a href="#">Services</a>
-            
           </div>
 {/* 
           <div

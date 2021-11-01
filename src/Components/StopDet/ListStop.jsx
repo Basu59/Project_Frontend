@@ -57,9 +57,6 @@ export default class ListStop extends Component {
                                 <tr>
                                     <th>Route NO</th>
                                     <th>Bus_Stops</th>
-
-
-
                                 </tr>
                             </thead>
 

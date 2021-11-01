@@ -23,6 +23,7 @@ import ListPassenger from './Components/PassengerDet/ListPassenger';
 import Main from './Main';
 import Home from './Home';
 
+import Sidebar from './NavComponent/Sidebar';
 
 function App() {
   return (
