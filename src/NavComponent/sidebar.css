@@ -78,7 +78,7 @@ body {
   z-index: 1;
   top: 62px; /*This give space for navbar at top*/
   left: 0;
-  background-color: rgb(76, 80, 79);
+  background-color: rgb(19, 22, 49);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 15px;
