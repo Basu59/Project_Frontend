@@ -1,10 +1,12 @@
 import axios from 'axios';
+import authHeader from "../services/auth-header";
 const URL_ROU = "http://localhost:8080/bus/addrou";
 const URL_SCH = "http://localhost:8080/bus/addsch";
 const URL_STOP = "http://localhost:8080/bus/addstop";
-const URL_BUS = "http://localhost:8080/bus/addbus";
 const BASE_URL="http://localhost:8080/bus/addbusd";
 const BASE_URL1="http://localhost:8080/bus/addpas";
+
+
 
 
 class Service {
@@ -13,7 +15,7 @@ class Service {
 
     // for Bus
     getRoute() {
-        return axios.get(URL_ROU);
+        return axios.get(URL_ROU, { headers: authHeader() });
     }
 
     createRoute(route) {

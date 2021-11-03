@@ -1,13 +1,30 @@
-import React, { Component } from 'react'
-// import {CardGroup,Card,Button }from 'react-bootstrap'
-// import { BiArrowBack } from 'react-icons/bi';
+import React, { useState, useEffect } from "react";
 import { MdArrowBackIosNew } from 'react-icons/md';
 
+import UserService from "../services/user.service";
 
-export default class Home extends Component {
-  render() {
-    return (
-      <>
+const Home = () => {
+  const [content, setContent] = useState("");
+
+  useEffect(() => {
+    UserService.getPublicContent().then(
+      (response) => {
+        setContent(response.data);
+      },
+      (error) => {
+        const _content =
+          (error.response && error.response.data) ||
+          error.message ||
+          error.toString();
+
+        setContent(_content);
+      }
+    );
+  }, []);
+
+  return (
+    <>
+    
         <div class="bg-warning d-flex justify-content-center">
           <div class="">Centurion University of Technology and Management
           </div>
@@ -86,6 +103,7 @@ export default class Home extends Component {
         </div>
 
       </>
-    )
-  }
-}
+  );
+};
+
+export default Home;

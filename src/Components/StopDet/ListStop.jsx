@@ -50,7 +50,7 @@ export default class ListStop extends Component {
                 </a>
                 <div className=" container shadow-lg mt-5 table-data bg-light" >
                     <h2 className="text-center">STOPS DETAILS</h2>
-                    <button type="button" style={{ marginLeft: "980px" }} className="btn btn-primary mb-3" onClick={this.addStop}>ADD STOPS</button>
+                    <button type="button" className="btn btn-primary mb-3" onClick={this.addStop}>ADD STOPS</button>
                     <div className="row">
                         <table className="table table-striped border-dark  table-bordered table-hover">
                             <thead className="thead-dark">

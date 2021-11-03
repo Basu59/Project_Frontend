@@ -30,9 +30,7 @@ class Sidebar extends React.Component {
     console.log(mobile, open);
     return (
       <div>
-        <div className="navHeaderWrap">
-          <Header ontoggleNav={this.ontoggleNav} />
-        </div>
+      
         <div className="bodyWrap">
           <div className={classnames({ blur: mobile && open })} />
           <div

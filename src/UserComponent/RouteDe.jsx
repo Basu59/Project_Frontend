@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Service from '../Components/Service';
+import Service from '../components/Service';
 export default class RouteDe extends Component {
     constructor(props) {
         super(props)
