@@ -8,32 +8,21 @@ const Profile = ({component: roles}) => {
 
   if (!currentUser) {
     return <Redirect to="/login" />;
-   
   }
-
-  if(roles  ===  "ROLE_USER"){
-    return <Redirect to="/home" />;
-  }else{
-    return <Redirect to="/" />;
-  }
-
   return (
     <div className="container">
-      <header className="jumbotron">
+      <header className="">
         <h3>
-          <strong>{currentUser.username}</strong> Profile
+         WELCOME  <strong>{currentUser.username}</strong> Profile
         </h3>
       </header>
+      
       <p>
-        <strong>Token:</strong> {currentUser.accessToken.substring(0, 20)} ...{" "}
-        {currentUser.accessToken.substr(currentUser.accessToken.length - 20)}
+        Your <strong>Id:</strong> {currentUser.id}
       </p>
       <p>
-        <strong>Id:</strong> {currentUser.id}
-      </p>
-      <p>
-        <strong>Email:</strong> {currentUser.email}
-      </p>
+        Your <strong>Email:</strong> {currentUser.email}
+      </p>You have
       <strong>Authorities:</strong>
       <ul>
         {currentUser.roles &&

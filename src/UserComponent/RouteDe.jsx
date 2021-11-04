@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { MdArrowBackIosNew } from 'react-icons/md';
+
 import Service from '../components/Service';
 export default class RouteDe extends Component {
     constructor(props) {
@@ -18,8 +20,9 @@ export default class RouteDe extends Component {
 
             <div class="">Centurion University of Technology and Management
             </div>
-
         </div>
+        <a href="/Home" className="ms-5"><MdArrowBackIosNew />
+                </a>
             <div className=" container shadow-lg mt-5 table-data bg-light" >
                 
                 <h2 className="text-center"> Route</h2>

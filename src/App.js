@@ -7,9 +7,9 @@ import "./App.css";
 // custom component
 import Login from "./components/Login";
 import Register from "./components/Register";
+import UserHome from "./UserComponent/UserHome";
 import Home from "./components/Home";
 import Profile from "./components/Profile";
-
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import UpdateRoute from './components/RouteDet/UpdateRoute';
@@ -32,7 +32,6 @@ import UpdateBus from './components/BusDet/UpdateBus'
 import ListPassenger from './components/PassengerDet/ListPassenger';
 import Main from './Main';
 
-import Sidebar from './NavComponent/Sidebar';
 
 import { logout } from "./actions/auth";
 import { clearMessage } from "./actions/message";
@@ -80,27 +79,24 @@ const App = () => {
   return (
     <Router history={history}>
       <div>
-        <nav className="navbar navbar-expand navbar-dark bg-dark">
-          <Link to={"/"} className="navbar-brand">
-            Registration Section
-          </Link>
-          <div className="navbar-nav mr-auto">
-            <li className="nav-item">
-              <Link to={"/home"} className="nav-link">
+        <nav className="navbar navbar-expand navbar-dark text-warning shadow ">
+          CUTM
+            
+
+          {currentUser ? (
+            <div className="navbar-nav ml-auto ">
+              <li className="nav-item">
+              <Link to={"/"} className="nav-link text-light">
                 Home
               </Link>
             </li>
-          </div>
-
-          {currentUser ? (
-            <div className="navbar-nav ml-auto">
-              <li className="nav-item">
-                <Link to={"/profile"} className="nav-link">
+              <li className="nav-item ">
+                <Link to={"/profile"} className="nav-link  text-light ">
                   {currentUser.username}
                 </Link>
               </li>
               <li className="nav-item">
-                <a href="/login" className="nav-link" onClick={logOut}>
+                <a href="/login" className="nav-link text-light" onClick={logOut}>
                   LogOut
                 </a>
               </li>
@@ -108,7 +104,7 @@ const App = () => {
           ) : (
             <div className="navbar-nav ml-auto">
               <li className="nav-item">
-                <Link to={"/login"} className="nav-link">
+                <Link to={"/login"} className="nav-link  text-light">
                   Login
                 </Link>
               </li>
@@ -122,15 +118,15 @@ const App = () => {
           )}
         </nav>
 
-        <div >
           <Switch>
             <Route exact path="/login" component={Login} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/profile" component={Profile} />
            
         <Route exact path='/' component={Main} />
-{/* <Sidebar/> */}
-<Route exact path='/Home' component={Home} />
+
+<Route exact path='/home' component={Home} />
+<Route exact path='/userhome' component={UserHome} />
 <Route exact path="/main" component={Main} />
 <Route exact path='/update-route/:id' component={UpdateRoute} />
 <Route exact path='/AddRoute' component={AddRoute} />
@@ -154,7 +150,7 @@ const App = () => {
 <Route exact path='/ListPassenger' component={ListPassenger} />
           </Switch>
         </div>
-      </div>
+      
     </Router>
   );
 };

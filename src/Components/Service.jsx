@@ -35,7 +35,7 @@ class Service {
 
 // shedule
     getSchedule() {
-        return axios.get(URL_SCH);
+        return axios.get(URL_SCH,{ headers: authHeader() });
     }
     createSchedule(schedule) {
         return axios.post(URL_SCH, schedule);
@@ -53,7 +53,7 @@ class Service {
     }
     // bus
     getBus(){
-        return axios.get(BASE_URL);
+        return axios.get(BASE_URL,{ headers: authHeader() });
     }
    
     createBus(bus){
@@ -74,7 +74,7 @@ class Service {
 
     // for stops
     getStop() {
-        return axios.get(URL_STOP);
+        return axios.get(URL_STOP,{ headers: authHeader() });
     }
 
     createStop(stop) {
@@ -95,7 +95,7 @@ class Service {
 
       //passanger
       getPassenger(){
-        return axios.get(BASE_URL1);
+        return axios.get(BASE_URL1,{ headers: authHeader() });
     }
 createPassenger(passenger){
         return axios.post(BASE_URL1,passenger);

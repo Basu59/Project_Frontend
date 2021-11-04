@@ -1,25 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { Component } from 'react'
 import { MdArrowBackIosNew } from 'react-icons/md';
-import { Redirect } from 'react-router-dom';
-import { useSelector } from "react-redux";
-import UserService from "../services/user.service";
 
 
-const Home = ({component: roles}) => {
-      const { user: currentUser } = useSelector((state) => state.auth);
-    
-      if (!currentUser) {
-        return <Redirect to="/login" />;
-       
-      }
-    
-      if(roles  !==  "ROLE_USER"){
-        return <Redirect to="/home" />;
-      }else{
-        return <Redirect to="/userhome" />;}
-
-    return (
-    <>
+export default class UserHome extends Component {
+    render() {
+        return (
+            <>
     
         <div class="bg-warning d-flex justify-content-center">
           <div class="">Centurion University of Technology and Management
@@ -32,11 +18,11 @@ const Home = ({component: roles}) => {
             <div className="col-sm-6">
               <div className="card">
                 <div className="card-body shadow">
-                  <h5 className="card-title">ADD ROUTE</h5>
+                  <h5 className="card-title">ROUTE</h5>
                   <p className="card-text">
-                    Here admin can edit the Route details
+                    Here Route details
                   </p>
-                  <a href="/ListRoute" className="btn btn-primary">
+                  <a href="/RouteDe" className="btn btn-primary">
                     Click Here
                   </a>
                 </div>
@@ -81,6 +67,7 @@ const Home = ({component: roles}) => {
                   </div>
                 </div>
               </div>
+              </div>
               <div className="row">
                 <div className="col-sm-6 pt-5">
                   <div className="card">
@@ -95,12 +82,10 @@ const Home = ({component: roles}) => {
                 </div>
               </div>
             </div>
-          </div>
+       
         </div>
 
       </>
-  );
+        )
     }
-  
-    
-export default Home;
+}
