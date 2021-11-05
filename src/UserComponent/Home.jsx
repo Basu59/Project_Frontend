@@ -1,12 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { MdArrowBackIosNew } from 'react-icons/md';
-import { Redirect } from 'react-router-dom';
+import { Redirect, } from 'react-router-dom';
+import { useSelector } from "react-redux";
 
-const Home = () => {
 
+
+  const Home = ({component: roles}) => {
+    const { user: currentUser } = useSelector((state) => state.auth);
+    
+    
+    if(currentUser.roles== "ROLE_USER" ){
+      return <Redirect to="/userhome" />;
+    }else{
     return (
     <>
-    
         <div class="bg-warning d-flex justify-content-center">
           <div class="">Centurion University of Technology and Management
           </div>
@@ -88,4 +95,5 @@ const Home = () => {
       </>
   );
     }
+  }
 export default Home;
