@@ -7,36 +7,37 @@ import { FiLogOut } from 'react-icons/fi';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 // custom component
-import Login from "./components/Login";
-import Register from "./components/Register";
+import Login from "./Components/Login";
+import Register from "./Components/Register";
 import UserHome from "./UserComponent/UserHome";
 import Home from "./UserComponent/Home";
 import All from "./All";
-import Profile from "./components/Profile";
+import Profile from "./Components/Profile";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
-import UpdateRoute from './components/RouteDet/UpdateRoute';
-import AddRoute from './components/RouteDet/AddRoute';
-import ListRoute from './components/RouteDet/ListRoute';
-import AddSche from './components/ScheduleDet/AddSche';
-import ListSchedule from './components/ScheduleDet/ListSchedule';
-import UpdateSche from './components/ScheduleDet/UpdateSche';
+import UpdateRoute from './Components/RouteDet/UpdateRoute';
+import AddRoute from './Components/RouteDet/AddRoute';
+import ListRoute from './Components/RouteDet/ListRoute';
+import AddSche from './Components/ScheduleDet/AddSche';
+import ListSchedule from './Components/ScheduleDet/ListSchedule';
+import UpdateSche from './Components/ScheduleDet/UpdateSche';
 import RouteDe from './UserComponent/RouteDe';
 import ScheduleDe from './UserComponent/ScheduleDe';
-import ListStop from './components/StopDet/ListStop';
-import AddStop from './components/StopDet/AddStop';
-import ViewStop from './components/StopDet/ViewStop';
-import UpdateStop from './components/StopDet/UpdateStop';
-import AddPassenger from './components/PassengerDet/AddPassenger';
-import UpdatePassenger from './components/PassengerDet/UpdatePassenger';
-import AddBus from './components/BusDet/AddBus'
-import ListBus from './components/BusDet/ListBus'
-import UpdateBus from './components/BusDet/UpdateBus'
-import ListPassenger from './components/PassengerDet/ListPassenger';
+import ListStop from './Components/StopDet/ListStop';
+import AddStop from './Components/StopDet/AddStop';
+import ViewStop from './Components/StopDet/ViewStop';
+import UpdateStop from './Components/StopDet/UpdateStop';
+import AddPassenger from './Components/PassengerDet/AddPassenger';
+import UpdatePassenger from './Components/PassengerDet/UpdatePassenger';
+import AddBus from './Components/BusDet/AddBus';
+import ListBus from './Components/BusDet/ListBus';
+import UpdateBus from './Components/BusDet/UpdateBus'
+import ListPassenger from './Components/PassengerDet/ListPassenger';
 import Main from "./Main";
 import BusDe from "./UserComponent/BusDe";
 import PassengerDe from "./UserComponent/PassengerDe";
 import StopDe from "./UserComponent/StopDe"
+import Service from "./Components/Service";
 import { logout } from "./actions/auth";
 import { clearMessage } from "./actions/message";
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import bus from './bus.jpg'
+import bus from './Bus.jpg'
 import * as Icon from 'react-bootstrap-icons';
 import { BiRightArrow } from 'react-icons/bi';
 import { Redirect } from 'react-router-dom';

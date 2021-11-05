@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { MdArrowBackIosNew } from 'react-icons/md';
 
-import Service from '../components/Service';
+import Service from '../Components/Service';
 export default class ScheduleDe extends Component {
     constructor(props) {
         super(props)

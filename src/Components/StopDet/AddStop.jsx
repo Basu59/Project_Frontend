@@ -21,7 +21,7 @@ export default class AddStop extends Component {
         e.preventDefault();
     
         let stop = {routeno : this.state.routeno,busstops:this.state.busstops }
-        console.log('route =>' + JSON.stringify(stop));
+        console.log('stop =>' + JSON.stringify(stop));
     
         Service.createStop(stop).then(res =>{
           this.props.history.push('/ListStop');
@@ -58,15 +58,17 @@ export default class AddStop extends Component {
     <form>
     
 <div class="form-floating mb-3">
+<label for="floatingInput">Route No</label>
   <input type="RouteNo" class="form-control" id="floatingInput" placeholder="RouteNo"
    value={this.state.routeno} onChange={ this.changeRouteNoHandler}/>
-  <label for="floatingInput">Route No</label>
+  
 </div>
     
 <div class="form-floating mb-3">
-  <input type="RouteNo" class="form-control" id="floatingInput" placeholder="RouteNo"
+<label for="floatingInput">Bus Stops</label>
+  <input type="RouteNo" class="form-control" id="floatingInput" placeholder="Bus stops"
    value={this.state.busstops} onChange={ this.changeBusstopHandler}/>
-  <label for="floatingInput">Bus Stops</label>
+  
 </div>
     
 

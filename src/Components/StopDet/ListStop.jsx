@@ -57,6 +57,7 @@ export default class ListStop extends Component {
                                 <tr>
                                     <th>Route NO</th>
                                     <th>Bus_Stops</th>
+                                    <th>Operation</th>
                                 </tr>
                             </thead>
 
@@ -69,8 +70,8 @@ export default class ListStop extends Component {
                                                 <td>{stop.routeno}</td>
                                                 <td>{stop.busstops}</td>
 
-                                                <td><button onClick={() => this.editStop(stop.id)} className="btn btn-primary">Update </button>
-                                                    <button style={{ marginLeft: "15px" }} onClick={() => this.deleteStop(stop.id)} className="btn btn-danger">Delete</button>
+                                                <td><button onClick={() => this.editStop(stop.id)} className="btn btn-primary">< GrUpdate/></button>
+                                                    <button style={{ marginLeft: "15px" }} onClick={() => this.deleteStop(stop.id)} className="btn btn-danger"><RiDeleteBinLine/></button>
 
                                                     <button style={{ marginLeft: "15px" }} onClick={() => this.viewStop(stop.id)} className="btn btn-info"><GrView /> </button>
                                                 </td>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Service from '../components/Service';
+import Service from '../Components/Service';
 import { MdArrowBackIosNew } from 'react-icons/md';
 
 export default class PassengerDe extends Component {
