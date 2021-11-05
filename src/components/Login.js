@@ -68,8 +68,8 @@ const Login = (props) => {
     return <Redirect to="/Main" />;
   }
 
-  return (
-    <div className="col-md-12 ">
+  return (<>
+ <div className="col-md-12 ">
       <div className="card bg-dark card-container">
         <img
           src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
@@ -125,6 +125,7 @@ const Login = (props) => {
         </Form>
       </div>
     </div>
+    </>
   );
 };
 

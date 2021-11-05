@@ -17,19 +17,18 @@ export default class RouteDe extends Component {
     render() {
         return (
             <> <div class="bg-warning d-flex justify-content-center">
-
-            <div class="">Centurion University of Technology and Management
+                <div class="">Centurion University of Technology and Management
+                </div>
             </div>
-        </div>
-        <a href="/Home" className="ms-5"><MdArrowBackIosNew />
+                <a href="/userhome" className="ms-5"><MdArrowBackIosNew />
                 </a>
-            <div className=" container shadow-lg mt-5 table-data bg-light" >
-                
-                <h2 className="text-center"> Route</h2>
-                <div className="row">
-                
+                <div className=" container shadow-lg mt-5 table-data bg-light" >
 
-                    <table className="table table-striped border-dark table-bordered table-hover">
+                    <h2 className="text-center"> Route</h2>
+                    <div className="row">
+
+
+                        <table className="table table-striped border-dark table-bordered table-hover">
 
                             <thead className="thead-dark">
                                 <tr>
@@ -53,7 +52,7 @@ export default class RouteDe extends Component {
                                     )
                                 }</tbody>
                         </table>
-                        
+
                     </div>
                 </div>
             </>

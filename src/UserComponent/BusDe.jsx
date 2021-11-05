@@ -1,65 +1,70 @@
 import React, { Component } from 'react'
+import Service from '../components/Service';
 import { MdArrowBackIosNew } from 'react-icons/md';
 
-import Service from '../components/Service';
-export default class ScheduleDe extends Component {
+export default class BusDe extends Component {
     constructor(props) {
         super(props)
+
         this.state = {
-            timing: []
+            bus_det: []
         }
     }
+
     componentDidMount() {
-        Service.getSchedule().then((res) => {
-            this.setState({ timing: res.data });
+        Service.getBus().then((res) => {
+            this.setState({ bus_det: res.data });
         });
     }
+
+
     render() {
         return (
             <>
                 <div class="bg-warning d-flex justify-content-center">
-
                     <div class="">Centurion University of Technology and Management
                     </div>
-
                 </div>
                 <a href="/userhome" className="ms-5"><MdArrowBackIosNew />
                 </a>
-                <div className=" container shadow-lg mt-5 bg-light table-data" >
-
-                    <h2 className="text-center"> Schedule</h2>
+                <div className=" container shadow-lg mt-5 table-data bg-light" >
+                    <h2 className="text-center">BUS DETAILS</h2>
                     <div className="row">
-
-
-                        <table className="table table-striped border-dark table-bordered table-hover">
-
+                        <table className="table table-striped border-dark  table-bordered table-hover">
                             <thead className="thead-dark">
                                 <tr>
                                     <th>Bus_NO</th>
-                                    <th>Arrival TIme</th>
-                                    <th> Depart</th>
-
+                                    <th>Driver</th>
+                                    <th> mobileno</th>
                                 </tr>
                             </thead>
 
-                            <tbody>
+                            <tbody >
                                 {
-                                    this.state.timing.map(
-                                        schedule =>
-                                            <tr key={schedule.id}>
+                                    this.state.bus_det.map(
+                                        bus =>
+                                            <tr key={bus.id}>
 
-                                                <td>{schedule.busno}</td>
-                                                <td>{schedule.aritime}</td>
-                                                <td>{schedule.deptime}</td>
+                                                <td>{bus.busno}</td>
+                                                <td>{bus.drivername}</td>
+                                                <td>{bus.mobileno}</td>
+                                              
+
                                             </tr>
                                     )
                                 }</tbody>
 
                         </table>
-
                     </div>
+
+
+
                 </div>
             </>
+
+
+
         )
     }
+
 }

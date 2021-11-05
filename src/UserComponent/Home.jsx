@@ -1,22 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { MdArrowBackIosNew } from 'react-icons/md';
 import { Redirect } from 'react-router-dom';
-import { useSelector } from "react-redux";
-import UserService from "../services/user.service";
 
-
-const Home = ({component: roles}) => {
-      const { user: currentUser } = useSelector((state) => state.auth);
-    
-      if (!currentUser) {
-        return <Redirect to="/login" />;
-       
-      }
-    
-      if(roles  !==  "ROLE_USER"){
-        return <Redirect to="/home" />;
-      }else{
-        return <Redirect to="/userhome" />;}
+const Home = () => {
 
     return (
     <>
@@ -27,7 +13,7 @@ const Home = ({component: roles}) => {
         </div>
         <a href="/" className="ms-5"><MdArrowBackIosNew />
         </a>
-        <div className="container mt-5">
+        <div className="container ">
           <div className="row">
             <div className="col-sm-6">
               <div className="card">
@@ -53,9 +39,10 @@ const Home = ({component: roles}) => {
                 </div>
               </div>
             </div>
+            </div>
 
           </div>
-          <div className="container mt-5">
+          <div className="container ">
             <div className="row">
               <div className="col-sm-6">
                 <div className="card">
@@ -81,8 +68,10 @@ const Home = ({component: roles}) => {
                   </div>
                 </div>
               </div>
+              </div>
+
               <div className="row">
-                <div className="col-sm-6 pt-5">
+                <div className="col-sm-6">
                   <div className="card">
                     <div className="card-body shadow-lg">
                       <h5 className="card-title"> ADD STOPS</h5>
@@ -95,12 +84,8 @@ const Home = ({component: roles}) => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
       </>
   );
     }
-  
-    
 export default Home;

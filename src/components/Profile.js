@@ -13,10 +13,9 @@ const Profile = ({component: roles}) => {
     <div className="container">
       <header className="">
         <h3>
-         WELCOME  <strong>{currentUser.username}</strong> Profile
+         WELCOME TO YOUR PROFILE  <strong>{currentUser.username}</strong>
         </h3>
       </header>
-      
       <p>
         Your <strong>Id:</strong> {currentUser.id}
       </p>

@@ -35,3 +35,11 @@ body {
 .navbar{
   background-color: rgb(28, 40, 66);
 }
+.Homecard{
+  background-color: rgb(255, 255, 255);
+}
+.log{
+  position: relative;
+  left: 700px;
+  float: "right";
+}

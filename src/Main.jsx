@@ -7,19 +7,13 @@ import { useSelector } from "react-redux";
 
 
 
-const Main = ({ component: roles }) => {
-  const { user: currentUser } = useSelector((state) => state.auth);
-
-
-
+const Main = () => {
   return (
     <>
       <div class="bg-warning d-flex justify-content-center">
 
         <div class="">Centurion University of Technology and Management
         </div>
-
-
       </div>
       <div className="mainimg">
         <a href="/Home" ><img className="rounded-circle shadow" height="80px" src={bus} />

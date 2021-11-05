@@ -11,12 +11,12 @@ export default class UserHome extends Component {
           <div class="">Centurion University of Technology and Management
           </div>
         </div>
-        <a href="/" className="ms-5"><MdArrowBackIosNew />
+        <a href="/Main" className="ms-5"><MdArrowBackIosNew />
         </a>
-        <div className="container mt-5">
+        <div className="container ">
           <div className="row">
             <div className="col-sm-6">
-              <div className="card">
+              <div className="card shadow-lg">
                 <div className="card-body shadow">
                   <h5 className="card-title">ROUTE</h5>
                   <p className="card-text">
@@ -30,10 +30,10 @@ export default class UserHome extends Component {
             </div>
             <div className="col-sm-6">
               <div className="card">
-                <div className="card-body shadow">
-                  <h5 className="card-title"> ADD SCHEDULE</h5>
-                  <p className="card-text">Here admin edit schedule details</p>
-                  <a href="/ListSchedule" className="btn btn-primary">
+                <div className="card-body shadow-lg">
+                  <h5 className="card-title"> SCHEDULE</h5>
+                  <p className="card-text">Here schedule details are available</p>
+                  <a href="/ScheduleDe" className="btn btn-primary">
                     Click Here
                   </a>
                 </div>
@@ -41,16 +41,17 @@ export default class UserHome extends Component {
             </div>
 
           </div>
-          <div className="container mt-5">
+          </div>
+          <div className="container ">
             <div className="row">
               <div className="col-sm-6">
                 <div className="card">
                   <div className="card-body shadow-lg">
-                    <h5 className="card-title">ADD BUS</h5>
+                    <h5 className="card-title">BUS</h5>
                     <p className="card-text">
-                      Here admin can edit the Bus details
+                      Here the Bus details are available
                     </p>
-                    <a href="/ListBus" className="btn btn-primary">
+                    <a href="/BusDe" className="btn btn-primary">
                       Click Here
                     </a>
                   </div>
@@ -59,9 +60,9 @@ export default class UserHome extends Component {
               <div className="col-sm-6">
                 <div className="card">
                   <div className="card-body shadow-lg">
-                    <h5 className="card-title"> ADD PASSENGER</h5>
-                    <p className="card-text">Here admin edit Passenger details</p>
-                    <a href="/ListPassenger" className="btn btn-primary">
+                    <h5 className="card-title"> PASSENGER</h5>
+                    <p className="card-text">Here Passenger details are available</p>
+                    <a href="/PassengerDe" className="btn btn-primary">
                       Click Here
                     </a>
                   </div>
@@ -69,19 +70,19 @@ export default class UserHome extends Component {
               </div>
               </div>
               <div className="row">
-                <div className="col-sm-6 pt-5">
+                <div className="col-sm-6 ">
                   <div className="card">
                     <div className="card-body shadow-lg">
-                      <h5 className="card-title"> ADD STOPS</h5>
-                      <p className="card-text">Here admin edit Stop details</p>
-                      <a href="/ListStop" className="btn btn-primary">
+                      <h5 className="card-title"> STOPS</h5>
+                      <p className="card-text">Here Stop details are available</p>
+                      <a href="/StopDe" className="btn btn-primary">
                         Click Here
                       </a>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+       
        
         </div>
 
