@@ -21,11 +21,10 @@ const Profile = ({component: roles}) => {
       </p>
       <p>
         Your <strong>Email:</strong> {currentUser.email}
-      </p>You have
-      <strong>Authorities:</strong>
+      </p>Your 
+      <strong>   Role:</strong>
       <ul>
-        {currentUser.roles &&
-          currentUser.roles.map((role, index) => <li key={index}>{role}</li>)}
+        {currentUser.roles}
       </ul>
     </div>
   );
