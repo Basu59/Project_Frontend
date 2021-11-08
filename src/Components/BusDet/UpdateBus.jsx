@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import Service from '../Service';
+import { Form, Row, Button } from "react-bootstrap";
+
 export default class UpdateBus extends Component {
   constructor(props) {
     super(props);
@@ -58,26 +60,25 @@ export default class UpdateBus extends Component {
     return (
 
 
-      <div className="container">
-        <div className="row ">
-          <div className="card col-md-4 offset-md-4 offset-md-4">
-            <h2>Update Details</h2>
-
+      <div >
+       <div className="card col-md-6 pt-9 offset-md-3 offset-md-3  bg-light shadow-lg rounded">
+            <h3 className="text-center text mt-2">Route</h3>
+            <div className="card-body">
             <form>
              <div className="form-group">
                 <label>Bus_No</label>
-                <input placeholder="Bus_No" className="form-control pb-1  mt-1 mb-4 shadow-lg p-3 mb-2 bg-body rounded"
+                <input className="form-control pb-1  mt-1 mb-4 shadow-lg p-3 mb-2 bg-body rounded"
                   value={this.state.busno} onChange={this.changeBusNoHandler} />
               </div>
 
               <div className="form-group">
                 <label>Driver Name</label>
-                <input  placeholder="Driver Name" className="form-control pb-1  mt-1 mb-4 shadow-lg p-3 mb-2 bg-body rounded"
+                <input   className="form-control pb-1  mt-1 mb-4 shadow-lg p-3 mb-2 bg-body rounded"
                   value={this.state.drivername} onChange={this.changeDNameHandler} />
               </div>
               <div className="form-group">
                 <label>mobileno</label>
-                <input placeholder="mobileno" className="form-control pb-1  mt-1 mb-4 shadow-lg p-3 mb-2 bg-body rounded"
+                <input  className="form-control pb-1  mt-1 mb-4 shadow-lg p-3 mb-2 bg-body rounded"
                   value={this.state.mobileno} onChange={this.changeMobileNoHandler} />
               </div>
            

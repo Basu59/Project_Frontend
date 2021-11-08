@@ -29,7 +29,7 @@ import ViewStop from './Components/StopDet/ViewStop';
 import UpdateStop from './Components/StopDet/UpdateStop';
 import AddPassenger from './Components/PassengerDet/AddPassenger';
 import UpdatePassenger from './Components/PassengerDet/UpdatePassenger';
-import AddBus from './Components/BusDet/AddBus';
+import AddBus from './Components/BusDet/AddBus'
 import ListBus from './Components/BusDet/ListBus';
 import UpdateBus from './Components/BusDet/UpdateBus'
 import ListPassenger from './Components/PassengerDet/ListPassenger';

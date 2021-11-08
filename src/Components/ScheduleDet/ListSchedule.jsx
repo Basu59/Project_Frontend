@@ -57,8 +57,8 @@ export default class ListSchedule extends Component {
                                 <tr>
 
                                     <th>Bus_NO</th>
-                                    <th>Atimr</th>
-                                    <th> Detime</th>
+                                    <th>Arrival Time</th>
+                                    <th> Departure Time</th>
 
 
                                 </tr>

@@ -48,8 +48,8 @@ export default class ListBus extends Component {
                             <thead className="thead-dark">
                                 <tr>
                                     <th>Bus_NO</th>
-                                    <th>Driver</th>
-                                    <th> mobileno</th>
+                                    <th>Driver Name</th>
+                                    <th> Mobile No</th>
                                 </tr>
                             </thead>
 

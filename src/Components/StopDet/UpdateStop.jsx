@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import Service from '../Service';
+import { Form, Row, Button } from "react-bootstrap";
+
 export default class UpdateStop extends Component {
   constructor(props) {
     super(props);
@@ -47,19 +49,20 @@ export default class UpdateStop extends Component {
   }
  
   cancel() {
-    this.props.history.push("/");
+    this.props.history.push("/ListStop");
   }
 
   render() {
     return (
 
 
-      <div className="container">
-        <div className="row ">
-          <div className="card col-md-4 offset-md-4 offset-md-4">
-            <h2>Update Details</h2>
+      <div >
+        <div className="card col-md-6 pt-9 offset-md-3 offset-md-3  bg-light shadow-lg rounded">
+          <h2 className="text-center text mt-2">Stop</h2>
 
-            <form>
+            <div className="card-body ">
+
+            <Form>
             
               <div className="form-group">
                 <label>Route_No</label>
@@ -76,7 +79,7 @@ export default class UpdateStop extends Component {
            
               <button className="btn btn-success me-3 mb-2" onClick={this.updateStop}>Save</button>
               <button className="btn btn-danger ms-4 mb-2" onClick={this.cancel.bind(this)} style={{ marginLeft: "10px" }}>cancel</button>
-            </form>
+            </Form>
           </div>
 
         </div>

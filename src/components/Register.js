@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { MdArrowBackIosNew } from 'react-icons/md';
 
 import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
@@ -99,13 +100,12 @@ const Register = () => {
   };
 
   return (
+    <>
+     <a href="/" className="ms-5"><MdArrowBackIosNew />
+        </a>  
     <div className="col-md-12">
-      <div className="card card-container bg-dark">
-        <img
-          src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
-          alt="profile-img"
-          className="profile-img-card"
-        />
+      <div className="card card-container ">
+       
 
         <Form onSubmit={handleRegister} ref={form}>
           {!successful && (
@@ -163,6 +163,7 @@ const Register = () => {
         </Form>
       </div>
     </div>
+    </>
   );
 };
 

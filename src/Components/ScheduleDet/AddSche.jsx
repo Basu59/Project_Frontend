@@ -60,7 +60,6 @@ export default class AddSche extends Component {
                   <h3 className="text-center text mt-2">Schedule</h3>
                   <div className="card-body">
                     <Form striped bordered hover variant="light">
-                      <Row className="mb-3">
                         <Form.Group controlId="formGridZip">
                           <Form.Label>
                             Enter Bus Number 
@@ -94,7 +93,7 @@ export default class AddSche extends Component {
                             onChange={this.changeDeptimeHandler}
                           />
                         </Form.Group>
-                      </Row>
+                    
                       <Button
                         className="btn-center me-2"
                         variant="danger"
@@ -104,7 +103,7 @@ export default class AddSche extends Component {
                         Submit
                       </Button>
                        <Button
-                        className="btn-center"
+                        className="btn-center ms-2"
                         variant="primary"
                         type="submit"
                         onClick={this.cancel.bind(this)}

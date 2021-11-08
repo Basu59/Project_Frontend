@@ -1,12 +1,5 @@
 import React, { Component } from 'react'
-import bus from './Bus.jpg'
-import * as Icon from 'react-bootstrap-icons';
-import { BiRightArrow } from 'react-icons/bi';
-import { Redirect } from 'react-router-dom';
-import { useSelector } from "react-redux";
-
-
-
+import bus from './bus.jpg'
 const Main = () => {
   return (
     <>
@@ -15,16 +8,17 @@ const Main = () => {
         <div class="">Centurion University of Technology and Management
         </div>
       </div>
-      <div className="mainimg">
-        <a href="/Home" ><img className="rounded-circle shadow" height="80px" src={bus} />
-        </a>
-      </div>
-      <div>
+      
+        <div className="mainimg">
+          <a href="/Home" ><img className="rounded-circle shadow" height="80px" src={bus} /> <figcaption class="figure-caption text-dark">BUS DETAILS</figcaption>
+          </a>
+        </div>
+        <div>
 
-      </div>
+        </div>
     </>
-  )
+      )
 
 }
 
-export default Main;
+      export default Main;

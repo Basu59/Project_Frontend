@@ -25,7 +25,7 @@ export default class ListStop extends Component {
                     <div class="">Centurion University of Technology and Management
                     </div>
                 </div>
-                <a href="/Home" className="ms-5"><MdArrowBackIosNew />
+                <a href="/userhome" className="ms-5"><MdArrowBackIosNew />
                 </a>
                 <div className=" container shadow-lg mt-5 table-data bg-light" >
                     <h2 className="text-center">STOPS DETAILS</h2>

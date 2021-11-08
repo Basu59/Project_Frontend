@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import Service from '../Service';
+import { Form, Row, Button } from "react-bootstrap";
+
 export default class AddBus extends Component {
   constructor(props) {
     super(props);
@@ -53,41 +55,31 @@ export default class AddBus extends Component {
     return (
 
       <>
-        <div className="container">
+        <div >
 
-          <div className="row justify-content-center">
-            <div className="card ">
-
-              <h2 >Bus Details</h2>
-              <form>
+        <div className="card col-md-6 pt-9 offset-md-3 offset-md-3  bg-light shadow-lg rounded">
+            <h3 className="text-center text mt-2">Route</h3>
+            <div className="card-body">
+              <Form>
 
                 <div class="form-floating mb-3">
-                  <input class="form-control" id="floatingInput" placeholder="RouteNo"
-                    value={this.state.busno} onChange={this.changeBusNoHandler} />
                   <label for="floatingInput">Bus No</label>
+                  <input class="form-control" id="floatingInput" value={this.state.busno} onChange={this.changeBusNoHandler} />
                 </div>
 
                 <div class="form-floating mb-3">
-                  <input class="form-control" id="floatingInput" placeholder="RouteNo"
-                    value={this.state.drivername} onChange={this.changeDNameHandler} />
-                  <label for="floatingInput">dname</label>
+                  <label for="floatingInput">Driver Name</label>
+                  <input class="form-control" id="floatingInput" value={this.state.drivername} onChange={this.changeDNameHandler} />
                 </div>
 
                 <div class="form-floating mb-3">
-                  <input class="form-control" id="floatingInput" placeholder="RouteNo"
-                    value={this.state.mobileno} onChange={this.changeMobileNoHandler} />
-                  <label for="floatingInput">mobileno</label>
+                  <label for="floatingInput">Mobile No</label>
+                  <input class="form-control" id="floatingInput" value={this.state.mobileno} onChange={this.changeMobileNoHandler} />
                 </div>
-
-
-
-
-                {/* example */}
-
 
                 <button className="btn btn-success me-3 mb-2" onClick={this.saveBus}>Save</button>
                 <button className="btn btn-danger ms-4 mb-2" onClick={this.cancel.bind(this)} style={{ marginLeft: "10px" }}>Cancel</button>
-              </form>
+              </Form>
             </div>
 
           </div>

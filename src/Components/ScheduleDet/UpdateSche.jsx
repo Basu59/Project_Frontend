@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import Service from '../Service'; 
+import { Form, Row, Button } from "react-bootstrap";
+
 export default class UpdateSche extends Component {
   constructor(props) {
     super(props);
@@ -59,32 +61,31 @@ export default class UpdateSche extends Component {
     return (
 
 
-      <div className="container">
-        <div className="row ">
-          <div className="card col-md-4 offset-md-4 offset-md-4">
-            <h2>Update Details</h2>
-
-            <form>
+      <div>
+        <div className="card col-md-6 pt-9 offset-md-3 offset-md-3  bg-light shadow-lg rounded">
+            <h3 className="text-center text mt-2">Route</h3>
+            <div className="card-body">
+            <Form>
               <div className="form-group">
                 <label>Bus_No</label>
-                <input placeholder="Bus_No" name="busno" className="form-control pb-1  mt-1 mb-4 shadow-lg p-3 mb-2 bg-body rounded"
+                <input name="busno" className="form-control pb-1  mt-1 mb-4 shadow-lg p-3 mb-2 bg-body rounded"
                   value={this.state.busno} onChange={this.changeBusNoHandler} />
               </div>
 
               <div className="form-group">
-                <label>aritime</label>
-                <input placeholder="aritime" name="aritime" className="form-control pb-1  mt-1 mb-4 shadow-lg p-3 mb-2 bg-body rounded"
+                <label>Arrival Time</label>
+                <input type="time"  name="aritime" className="form-control pb-1  mt-1 mb-4 shadow-lg p-3 mb-2 bg-body rounded"
                   value={this.state.aritime} onChange={this.changeArtimeHandler} />
               </div>
               <div className="form-group">
-                <label>deptime</label>
-                <input placeholder="deptime" name="deptime" className="form-control pb-1  mt-1 mb-4 shadow-lg p-3 mb-2 bg-body rounded"
+                <label>Departure Time</label>
+                <input  type="time"name="deptime" className="form-control pb-1  mt-1 mb-4 shadow-lg p-3 mb-2 bg-body rounded"
                   value={this.state.deptime} onChange={this.changeDeptimeHandler} />
               </div>
            
               <button className="btn btn-success me-3 mb-2" onClick={this.updateSchedule}>Save</button>
               <button className="btn btn-danger ms-4 mb-2" onClick={this.cancel.bind(this)} style={{ marginLeft: "10px" }}>cancel</button>
-            </form>
+            </Form>
           </div>
 
         </div>

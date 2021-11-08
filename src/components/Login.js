@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Redirect } from 'react-router-dom';
 import { AiOutlineUser } from "react-icons/ai";
 import { RiLockPasswordLine } from "react-icons/ri";
+import { MdArrowBackIosNew } from 'react-icons/md';
 
 import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
@@ -53,7 +54,7 @@ const Login = (props) => {
     if (checkBtn.current.context._errors.length === 0) {
       dispatch(login(username, password))
         .then(() => {
-          props.history.push("/userhome");
+          props.history.push("/Main");
           window.location.reload();
         })
         .catch(() => {
@@ -69,13 +70,11 @@ const Login = (props) => {
   }
 
   return (<>
+  <a href="/" className="ms-5"><MdArrowBackIosNew />
+        </a>  
  <div className="col-md-12 ">
-      <div className="card bg-dark card-container">
-        <img
-          src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
-          alt="profile-img"
-          className="profile-img-card "
-        />
+      <div className="card card-container">
+      
 
         <Form onSubmit={handleLogin} ref={form}>
        

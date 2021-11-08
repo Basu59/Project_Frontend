@@ -65,63 +65,45 @@ export default class Route extends Component {
          <div className="card col-md-6 pt-9 offset-md-3 offset-md-3  bg-light shadow-lg rounded">
             <h3 className="text-center text mt-2">Route</h3>
             <div className="card-body">
-              <Form striped bordered hover variant="light">
-                <Row className="mb-3">
-                  <Form.Group controlId="formGridZip">
-                    <Form.Label>
-                      Enter Route number
-                    </Form.Label>
-                    
-                    <Form.Control
-                      type="text"
-                      value={this.state.routeno}
-                      onChange={this.changeRouteNoHandler}
-                    />
-                  </Form.Group>
-                  <Form.Group controlId="formGridZip">
-                    <Form.Label>
-                      Enter Bus number 
-                    </Form.Label>
-                   
-                    <Form.Control
-                      type="number"
-                      value={this.state.busno}
-                      onChange={this.changeBusNoHandler}
-                    />
-                  </Form.Group>
-                  <Form.Group controlId="formGridZip">
-                    <Form.Label>
-                      Enter Origin
-                    </Form.Label>
-                   
-                    <Form.Control
-                      type="text"
-                      value={this.state.origin}
-                      onChange={this.changeOriginHandler}
-                    />
-                  </Form.Group>
-                  <Form.Group controlId="formGridZip">
-                    <Form.Label>
-                      Deatination
-                    </Form.Label>
-                   
-                    <Form.Control
-                      type="text"
-                      value={this.state.destination}
-                      onChange={this.changeDestinationHandler}
-                    />
-                  </Form.Group>
-                </Row>
+              <Form striped bordered hover variant="light" >
+                <div class="form-floating mb-3">
+                  <label for="floatingInput">Enter Route number</label>
+                  
+                   <input
+        type="text"
+        class="form-control is-valid"
+        value={this.state.routeno}
+        onChange={this.changeRouteNoHandler} 
+        required="required"
+        
+      />
+                </div>
+                <div class="form-floating mb-3">
+                  <label for="floatingInput">Enter Bus number </label>
+                  <input class="form-control" id="floatingInput"
+                    value={this.state.busno} onChange={this.changeBusNoHandler} />
+                </div>
+                <div class="form-floating mb-3">
+                  <label for="floatingInput">Enter Origin </label>
+                  <input class="form-control" id="floatingInput"
+                    value={this.state.origin} onChange={this.changeOriginHandler} />
+                </div>
+                <div class="form-floating mb-3">
+                  <label for="floatingInput">Enter Deatination </label>
+                  <input class="form-control" id="floatingInput"
+                    value={this.state.destination} onChange={this.changeDestinationHandler} />
+                </div>
+              
                 <Button
-                  className="btn-center me-2"
-                  variant="primary"
+                  className="btn-center me-2 ms-2"
+                  variant="danger"
                   type="submit"
                   onClick={this.saveRoute}
                 >
                   Submit
                 </Button>
                  <Button
-                  className="btn-center"
+                  className="btn-center ms-2 "
                   variant="primary"
                   type="submit"
                   onClick={this.cancel.bind(this)}
