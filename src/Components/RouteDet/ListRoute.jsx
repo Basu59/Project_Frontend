@@ -36,7 +36,6 @@ export default class ListRoute extends Component {
         return (
             <>
        
-       
                 <div class="bg-warning d-flex justify-content-center">
 
                     <div class="">Centurion University of Technology and Management

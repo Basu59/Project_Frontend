@@ -64,7 +64,7 @@ export default class AddBus extends Component {
 
                 <div class="form-floating mb-3">
                   <label for="floatingInput">Bus No</label>
-                  <input class="form-control" id="floatingInput" value={this.state.busno} onChange={this.changeBusNoHandler} />
+                  <input class="form-control" id="floatingInput" value={this.state.busno} onChange={this.changeBusNoHandler}  />
                 </div>
 
                 <div class="form-floating mb-3">

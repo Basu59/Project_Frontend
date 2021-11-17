@@ -73,28 +73,28 @@ export default class UpdatePassenger extends Component {
 
       <div>
          <div className="card col-md-6 pt-9 offset-md-3 offset-md-3  bg-light shadow-lg rounded">
-            <h3 className="text-center text mt-2">Route</h3>
+            <h3 className="text-center text mt-2">Passenger</h3>
             <div className="card-body">
             <Form>
              <div className="form-group">
                 <label>First Name</label>
-                <input placeholder="First_Name" className="form-control pb-1  mt-1 mb-4 shadow-lg p-3 mb-2 bg-body rounded"
+                <input className="form-control pb-1  mt-1 mb-4 shadow-lg p-3 mb-2 bg-body rounded"
                   value={this.state.firstname} onChange={this.changeFirstNameHandler} />
               </div>
 
               <div className="form-group">
                 <label>Last Name</label>
-                <input  placeholder="Last_Name" className="form-control pb-1  mt-1 mb-4 shadow-lg p-3 mb-2 bg-body rounded"
-                  value={this.state.lastname} onChange={this.changeLastNameHandler} />
+                <input className="form-control pb-1  mt-1 mb-4 shadow-lg p-3 mb-2 bg-body rounded"
+                  value={this.state.lastname} onChange={this.changeLastNameHandler} required />
               </div>
               <div className="form-group">
                 <label>Email Id</label>
-                <input  placeholder="Email_Id" className="form-control pb-1  mt-1 mb-4 shadow-lg p-3 mb-2 bg-body rounded"
+                <input   className="form-control pb-1  mt-1 mb-4 shadow-lg p-3 mb-2 bg-body rounded"
                   value={this.state.emailid} onChange={this.changeEmailIdHandler} />
               </div>
               <div className="form-group">
-                <label>mobileno</label>
-                <input placeholder="mobileno" className="form-control pb-1  mt-1 mb-4 shadow-lg p-3 mb-2 bg-body rounded"
+                <label>Mobile No</label>
+                <input  className="form-control pb-1  mt-1 mb-4 shadow-lg p-3 mb-2 bg-body rounded"
                   value={this.state.mobileno} onChange={this.changeMobileNoHandler} />
               </div>
            

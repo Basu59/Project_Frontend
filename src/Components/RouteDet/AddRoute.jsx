@@ -71,10 +71,9 @@ export default class Route extends Component {
                   
                    <input
         type="text"
-        class="form-control is-valid"
+        class="form-control"
         value={this.state.routeno}
         onChange={this.changeRouteNoHandler} 
-        required="required"
         
       />
                 </div>

@@ -67,13 +67,13 @@ export default class UpdateStop extends Component {
               <div className="form-group">
                 <label>Route_No</label>
                 <input placeholder="Bus_No" name="busno" className="form-control pb-1  mt-1 mb-4 shadow-lg p-3 mb-2 bg-body rounded"
-                  value={this.state.routeno} onChange={this.changeRouteNoHandler} />
+                  value={this.state.routeno} onChange={this.changeRouteNoHandler} id="validationError" required/>
               </div>
 
               <div className="form-group">
                 <label>BUS Stops</label>
-                <input placeholder="Origin" name="origin" className="form-control pb-1  mt-1 mb-4 shadow-lg p-3 mb-2 bg-body rounded"
-                  value={this.state.busstops} onChange={this.changeBusstopHandler} />
+                <input placeholder="Origin" name="origin" className="form-control pb-1  mt-1 mb-4 shadow-lg p-3 mb-2 bg-body is-invalid rounded"
+                  value={this.state.busstops} onChange={this.changeBusstopHandler} id="validationError" required/>
               </div>
              
            
