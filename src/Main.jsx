@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import bus from './bus.jpg'
+import bus from './Bus.jpg'
 const Main = () => {
   return (
     <>
