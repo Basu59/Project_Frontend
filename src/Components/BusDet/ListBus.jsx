@@ -50,6 +50,9 @@ export default class ListBus extends Component {
                                     <th>Bus_NO</th>
                                     <th>Driver Name</th>
                                     <th> Mobile No</th>
+                                
+                                    <th>Operation</th>
+
                                 </tr>
                             </thead>
 

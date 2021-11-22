@@ -56,9 +56,10 @@ export default class ListSchedule extends Component {
                             <thead className="thead-dark">
                                 <tr>
 
-                                    <th>Bus_NO</th>
+                                    <th>Bus NO</th>
                                     <th>Arrival Time</th>
                                     <th> Departure Time</th>
+                                    <th>Operation</th>
 
 
                                 </tr>

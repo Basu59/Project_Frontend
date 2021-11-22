@@ -1,7 +1,11 @@
 import React, { Component } from 'react'
 import Service from '../Service';
 import { MdArrowBackIosNew } from 'react-icons/md';
+import { RiDeleteBinLine } from "react-icons/ri";
 
+
+import { GrUpdate } from "react-icons/gr";
+import { GrView } from "react-icons/gr";
 export default class ListRoute extends Component {
     
     constructor(props) {
@@ -56,10 +60,11 @@ export default class ListRoute extends Component {
 
                             <thead className="thead-dark">
                                 <tr>
-                                    <th>Route_No</th>
-                                    <th>Bus_NO</th>
-                                    <th>origin</th>
+                                    <th>Route No</th>
+                                    <th>Bus NO</th>
+                                    <th>Origin</th>
                                     <th> Destination</th>
+                                    <th>Operation</th>
 
 
                                 </tr>
@@ -76,8 +81,8 @@ export default class ListRoute extends Component {
                                                 <td>{route.origin}</td>
                                                 <td>{route.destination}</td>
 
-                                                <td><button onClick={() => this.editRoute(route.id)} className="btn btn-primary">Update </button>
-                                                    <button style={{ marginLeft: "15px" }} onClick={() => this.deleteRoute(route.id)} className="btn btn-danger">Delete</button>
+                                                <td><button onClick={() => this.editRoute(route.id)} className="btn btn-primary">< GrUpdate /></button>
+                                                    <button style={{ marginLeft: "15px" }} onClick={() => this.deleteRoute(route.id)} className="btn btn-danger"><RiDeleteBinLine/></button>
                                                     {/* <button style={{marginLeft: "15px"}} onClick={ () => this.viewEmployee(employee.id)} className="btn btn-info">View </button> */}
                                                 </td>
 

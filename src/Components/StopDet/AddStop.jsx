@@ -57,7 +57,7 @@ export default class AddStop extends Component {
 
             <div className="card-body ">
 
-              <Form>
+              <Form novalidate>
 
                 <div class="form-floating mb-3">
                   <label for="floatingInput">Route No</label>

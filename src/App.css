@@ -30,3 +30,14 @@ label {
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
+
+.d-block{
+  height: 600px;
+  width: 1000px;
+  position: relative;
+  left: 15rem;
+  top: 1rem;
+}
+.carousel-inner{
+  height: 40rem;
+}

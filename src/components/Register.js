@@ -1,11 +1,13 @@
 import React, { useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { MdArrowBackIosNew } from 'react-icons/md';
+import Log from "../IMG/Signup.gif";
 
 import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
 import CheckButton from "react-validation/build/button";
 import { isEmail } from "validator";
+import { Row, Col, Container } from "react-bootstrap";
 
 import { AiOutlineUser } from "react-icons/ai";
 import { RiLockPasswordLine } from "react-icons/ri";
@@ -101,13 +103,18 @@ const Register = () => {
 
   return (
     <>
-     <a href="/" className="ms-5"><MdArrowBackIosNew />
-        </a>  
-    <div className="col-md-12">
-      <div className="card card-container ">
-       
-
-        <Form onSubmit={handleRegister} ref={form}>
+      <a href="/" className="ms-5">
+        <MdArrowBackIosNew />
+      </a>
+      <div className="loginlogo bg-light ">
+        <Row >
+          <Col className="bg-light">
+            <img src={Log} alt="..." />
+          </Col>
+          <Col className="bg-light">
+              <div className="card card-container bg-light">
+              <h4> Sign up</h4>
+              <Form onSubmit={handleRegister} ref={form}>
           {!successful && (
             <div>
               <div className="form-group">
@@ -161,8 +168,14 @@ const Register = () => {
           )}
           <CheckButton style={{ display: "none" }} ref={checkBtn} />
         </Form>
+              </div>
+            
+          </Col>
+        </Row>
       </div>
-    </div>
+
+        
+      
     </>
   );
 };

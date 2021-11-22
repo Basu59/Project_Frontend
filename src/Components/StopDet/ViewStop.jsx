@@ -21,16 +21,16 @@ class ViewStop extends Component {
         return (
             <div>
                 <br></br>
-                <div className = "card col-md-6 offset-md-3">
+                <div className = "card col-md-4 offset-md-3">
                     <h3 className = "text-center">Bus Stop Details</h3>
                     <div className = "card-body">
                         <div className = "row">
-                            <label>Route No: </label>
-                            <div> { this.state.stops.routeno }</div>
+                            <label>Route No:  {this.state.stops.routeno} </label>
+                          
                         </div>
                         <div className = "row">
-                            <label>Bus Stop: </label>
-                            <div> { this.state.stops.busstops }</div>
+                            <label>Bus Stop:  {this.state.stops.busstops} </label>
+                            
                         </div>
                         
                     </div>

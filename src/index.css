@@ -13,8 +13,12 @@ code {
 }
 .form-group{
 color: rgb(0, 0, 0);}
-.col{
-  background-color: rgb(241, 233, 233);
+.loginlogo{
+  position: relative;
+  left: 14rem;
+  top: 5rem;
+  align-items: center;
+  width: 1000px;
 }
 body{
   background-color: #e4f9ff !important;
