@@ -95,9 +95,9 @@ const Home = ({ component: roles }) => {
             <div className="col-sm-6">
               <div className="card">
                 <div className="card-body shadow-lg">
-                  <h5 className="card-title">VECHILE REGISTRATION</h5>
+                  <h5 className="card-title">VEHICLE REGISTRATION</h5>
                   <p className="card-text">
-                    Registration of vechile
+                    Registration of vehicle
                   </p>
                   <a href="/listvech" className="btn btn-primary">
                     Click Here

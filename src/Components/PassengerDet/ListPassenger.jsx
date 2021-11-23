@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import Service from '../Service';
 import { MdArrowBackIosNew } from 'react-icons/md';
-
+import { RiDeleteBinLine } from "react-icons/ri";
+import { GrUpdate } from "react-icons/gr";
 export default class ListPassenger extends Component {
     constructor(props) {
         super(props)
@@ -75,8 +76,8 @@ export default class ListPassenger extends Component {
                                                 <td>{passenger.lastname}</td>
                                                 <td>{passenger.emailid}</td>
                                                 <td>{passenger.mobileno}</td>
-                                                <td><button onClick={() => this.editPassenger(passenger.id)} className="btn btn-primary">Update </button>
-                                                    <button style={{ marginLeft: "15px" }} onClick={() => this.deletePassenger(passenger.id)} className="btn btn-danger">Delete</button>
+                                                <td><button onClick={() => this.editPassenger(passenger.id)} className="btn btn-primary"><GrUpdate/> </button>
+                                                    <button style={{ marginLeft: "15px" }} onClick={() => this.deletePassenger(passenger.id)} className="btn btn-danger"><RiDeleteBinLine/></button>
                                                     {/* <button style={{marginLeft: "15px"}} onClick={ () => this.viewEmployee(employee.id)} className="btn btn-info">View </button> */}
                                                 </td>
 
