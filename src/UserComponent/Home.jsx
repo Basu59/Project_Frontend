@@ -81,7 +81,7 @@ const Home = ({ component: roles }) => {
             <div className="col-sm-6">
               <div className="card">
                 <div className="card-body shadow-lg">
-                  <h5 className="card-title">ADD Stop</h5>
+                  <h5 className="card-title">ADD STOP</h5>
                   <p className="card-text">
                     Here admin can edit the Stop details
                   </p>
@@ -91,6 +91,22 @@ const Home = ({ component: roles }) => {
                 </div>
               </div>
             </div>
+
+            <div className="col-sm-6">
+              <div className="card">
+                <div className="card-body shadow-lg">
+                  <h5 className="card-title">VECHILE REGISTRATION</h5>
+                  <p className="card-text">
+                    Registration of vechile
+                  </p>
+                  <a href="/listvech" className="btn btn-primary">
+                    Click Here
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
             <div className="col-sm-6">
               <div className="card">
                 <div className="card-body shadow-lg">

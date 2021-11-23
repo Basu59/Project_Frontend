@@ -3,6 +3,7 @@ import authHeader from "../services/auth-header";
 const URL_ROU = "http://localhost:8080/bus/addrou";
 const URL_SCH = "http://localhost:8080/bus/addsch";
 const URL_STOP = "http://localhost:8080/bus/addstop";
+const URL_VECH = "http://localhost:8080/bus/addvech";
 const BASE_URL="http://localhost:8080/bus/addbusd";
 const BASE_URL1="http://localhost:8080/bus/addpas";
 
@@ -12,6 +13,27 @@ const BASE_URL1="http://localhost:8080/bus/addpas";
 class Service {
 
 
+// for Vechile Registration
+
+getVech() {
+    return axios.get(URL_VECH,{ headers: authHeader() });
+}
+
+createVech(vech) {
+    return axios.post(URL_VECH, vech,{ headers: authHeader() });
+}
+
+getVechById(VechId) {
+    return axios.get(URL_VECH + '/' + VechId,{ headers: authHeader() });
+}
+
+updateVech(vech, VechId) {
+    return axios.put(URL_VECH + '/' + VechId, vech,{ headers: authHeader() });
+}
+
+deleteVech(VechId) {
+    return axios.delete(URL_VECH + '/' + VechId,{ headers: authHeader() });
+}
 
     // for Bus
     getRoute() {

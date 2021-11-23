@@ -38,6 +38,9 @@ import BusDe from "./UserComponent/BusDe";
 import PassengerDe from "./UserComponent/PassengerDe";
 import StopDe from "./UserComponent/StopDe"
 import Service from "./Components/Service";
+import ListVech from "./Components/VechReg/ListVech";
+import UpdateVech from "./Components/VechReg/UpdateVech";
+import AddVech from "./Components/VechReg/AddVech";
 import { logout } from "./actions/auth";
 import { clearMessage } from "./actions/message";
 
@@ -158,6 +161,12 @@ const App = () => {
           <Route exact path='/ScheduleDe' component={ScheduleDe} />
           <Route exact path='/PassengerDe' component={PassengerDe} />
           <Route exact path='/StopDe' component={StopDe} />
+
+          <Route exact path='/listvech' component={ListVech} />
+          <Route exact path='/addvech' component={AddVech} />
+          <Route exact path='/update-vech/:id' component={UpdateVech} />
+
+          
 
         </Switch>
       </div>
